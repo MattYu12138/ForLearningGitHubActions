@@ -20,6 +20,7 @@ jobs:
         working-directory: web-app-sample
 
   deploy:
+    needs: test
     runs-on: ubuntu-latest
     steps:
       - name: Get code
